@@ -43,7 +43,7 @@ export const GameSpace = () => {
           className="menu-button"
           onClick={() => setShow(true)}
         >
-          <img src="./images/menu.svg" alt="Menu" />
+          <img src="./images/ menu.svg" alt="Menu" />
         </button>
 
         {

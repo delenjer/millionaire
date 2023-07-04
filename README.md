@@ -1,7 +1,7 @@
 # Who wants to be a millionaire
 
-Install: npm install;
-Run project: npm start;
-Deploy: npm run deploy;
+- Install: npm install;
+- Run project: npm start;
+- Deploy: npm run deploy;
 
-# Demo link - link
+> Demo link - https://delenjer.github.io/millionaire/
