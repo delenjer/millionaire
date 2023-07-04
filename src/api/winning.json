@@ -1,0 +1,112 @@
+{
+  "winning": [
+    {
+      "id": "1",
+      "indexStatus": "2",
+      "isWin": false,
+      "result": {
+        "currency": "$",
+        "total": "500"
+      }
+    },
+    {
+      "id": "2",
+      "indexStatus": "3",
+      "isWin": false,
+      "result": {
+        "currency": "$",
+        "total": "1,000"
+      }
+    },
+    {
+      "id": "3",
+      "indexStatus": "4",
+      "isWin": false,
+      "result": {
+        "currency": "$",
+        "total": "2,000"
+      }
+    },
+    {
+      "id": "4",
+      "indexStatus": "5",
+      "isWin": false,
+      "result": {
+        "currency": "$",
+        "total": "4,000"
+      }
+    },
+    {
+      "id": "5",
+      "indexStatus": "6",
+      "isWin": false,
+      "result": {
+        "currency": "$",
+        "total": "8,000"
+      }
+    },
+    {
+      "id": "6",
+      "indexStatus": "7",
+      "isWin": false,
+      "result": {
+        "currency": "$",
+        "total": "16,000"
+      }
+    },
+    {
+      "id": "7",
+      "indexStatus": "8",
+      "isWin": false,
+      "result": {
+        "currency": "$",
+        "total": "32,000"
+      }
+    },
+    {
+      "id": "8",
+      "indexStatus": "9",
+      "isWin": false,
+      "result": {
+        "currency": "$",
+        "total": "64,000"
+      }
+    },
+    {
+      "id": "9",
+      "indexStatus": "10",
+      "isWin": false,
+      "result": {
+        "currency": "$",
+        "total": "125,000"
+      }
+    },
+    {
+      "id": "10",
+      "indexStatus": "11",
+      "isWin": false,
+      "result": {
+        "currency": "$",
+        "total": "250,000"
+      }
+    },
+    {
+      "id": "11",
+      "indexStatus": "12",
+      "isWin": false,
+      "result": {
+        "currency": "$",
+        "total": "500,000"
+      }
+    },
+    {
+      "id": "12",
+      "indexStatus": "13",
+      "isWin": false,
+      "result": {
+        "currency": "$",
+        "total": "1,000,000"
+      }
+    }
+  ]
+}

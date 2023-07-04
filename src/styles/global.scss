@@ -1,0 +1,139 @@
+:root {
+  --bg-color: #FFF3EB;
+  --orange-100: #FF8B37;
+  --hover-btn-color: #FFAC70;
+  --pressed-btn-color: #E87928;
+  --game-section-bg: #F5F5F7;
+  --action-border: #D0D0D8;
+  --text-color: #1C1C21;
+  --correct-bg: #E6FAEA;
+  --correct-border: #47D867;
+  --wrong-bg: #FDEEED;
+  --wrong-border: #EC6259;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  font-size: 62.5%;
+}
+
+html,
+body,
+#root,
+.app {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-width: 128.0rem;
+  margin: auto;
+  z-index: 2;
+  gap: 0 3.2rem;
+}
+
+.container-image {
+  position: relative;
+  width: 100%;
+  max-width: 45.1rem;
+  height: 35.6rem;
+
+  .img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+.container-content {
+  width: 100%;
+  max-width: 62.4rem;
+}
+
+.show {
+  width: 100%;
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+.link-start-game {
+  display: block;
+  width: 100%;
+  max-width: 29.6rem;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 116%;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: var(--orange-100);
+  padding: 2.1rem 2.4rem;
+  margin-top: 6.4rem;
+  border-radius: 1.2rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: var(--hover-btn-color);
+  }
+
+  &:hover {
+    background-color: var(--hover-btn-color);
+  }
+
+  &:active {
+    background-color: var(--pressed-btn-color);
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  .container-image {
+    position: relative;
+    width: 100%;
+    max-width: 19.68rem;
+    height: 15.54rem;
+  }
+
+  .container-content {
+    max-width: initial;
+    margin-top: 4.25rem;
+  }
+
+  .link-start-game {
+    margin: 10.2rem auto 4.8rem;
+    padding: 1.6rem 2.4rem;
+  }
+}

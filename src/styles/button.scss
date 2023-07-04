@@ -1,0 +1,54 @@
+.menu-button {
+  display: block;
+  position: absolute;
+  top: 1.6rem;
+  right: 1.6rem;
+  left: auto;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.button-container {
+  display: flex;
+  position: relative;
+  clip-path: polygon(7% 0, 93% 0, 100% 50%, 93% 100%, 7% 100%, 0 50%);
+  background-color: var(--action-border);
+  padding: 0.1rem;
+  z-index: 2;
+}
+
+.button-variants-container {
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: var(--orange-100);
+  }
+}
+
+.action {
+  width: 28.8rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--text-color);
+  background-color: #fff;
+  border: none;
+  padding: 1.6rem 2.4rem;
+  margin: auto;
+  clip-path: polygon(7% 0, 93% 0, 100% 50%, 93% 100%, 7% 100%, 0 50%);
+  cursor: pointer;
+}
+
+@media (min-width: 769px) {
+  .menu-button {
+    display: none;
+  }
+}
+
+@media (min-width: 1300px) {
+  .action {
+    width: 38.9rem;
+    font-size: 2rem;
+    padding: 2.1rem 3.2rem;
+  }
+}

@@ -1,0 +1,376 @@
+{
+  "questionsList": [
+    {
+      "id": "1",
+      "title": "What is the color of the White House?",
+      "indexStatus": "2",
+      "variants": [
+        {
+          "id": "1",
+          "index": "A",
+          "text": "Pink",
+          "status": false
+        },
+        {
+          "id": "2",
+          "index": "B",
+          "text": "Blue",
+          "status": false
+        },
+        {
+          "id": "3",
+          "index": "C",
+          "text": "White",
+          "status": true
+        },
+        {
+          "id": "4",
+          "index": "D",
+          "text": "Rainbow",
+          "status": false
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "How many legs does a spider typically have?",
+      "indexStatus": "3",
+      "variants": [
+        {
+          "id": "5",
+          "index": "A",
+          "text": "100",
+          "status": false
+        },
+        {
+          "id": "6",
+          "index": "B",
+          "text": "2",
+          "status": false
+        },
+        {
+          "id": "7",
+          "index": "C",
+          "text": "8",
+          "status": true
+        },
+        {
+          "id": "8",
+          "index": "D",
+          "text": "4",
+          "status": false
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "What do you call a group of crows?",
+      "indexStatus": "4",
+      "variants": [
+        {
+          "id": "9",
+          "index": "A",
+          "text": "A flock",
+          "status": false
+        },
+        {
+          "id": "10",
+          "index": "B",
+          "text": "A murder",
+          "status": true
+        },
+        {
+          "id": "11",
+          "index": "C",
+          "text": "A gaggle",
+          "status": false
+        },
+        {
+          "id": "12",
+          "index": "D",
+          "text": "A herd",
+          "status": false
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "title": "What is the capital of Australia?",
+      "indexStatus": "5",
+      "variants": [
+        {
+          "id": "13",
+          "index": "A",
+          "text": "Sydney",
+          "status": false
+        },
+        {
+          "id": "14",
+          "index": "B",
+          "text": "Melbourne",
+          "status": false
+        },
+        {
+          "id": "15",
+          "index": "C",
+          "text": "Brisbane",
+          "status": false
+        },
+        {
+          "id": "16",
+          "index": "D",
+          "text": "Canberra",
+          "status": true
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "title": "What is the world's largest ocean?",
+      "indexStatus": "6",
+      "variants": [
+        {
+          "id": "17",
+          "index": "A",
+          "text": "Atlantic",
+          "status": false
+        },
+        {
+          "id": "18",
+          "index": "B",
+          "text": "Indian",
+          "status": false
+        },
+        {
+          "id": "19",
+          "index": "C",
+          "text": "Pacific",
+          "status": true
+        },
+        {
+          "id": "20",
+          "index": "D",
+          "text": "Arctic",
+          "status": false
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "title": "Who wrote the \"Game of Thrones\" series of books?",
+      "indexStatus": "7",
+      "variants": [
+        {
+          "id": "21",
+          "index": "A",
+          "text": "J.K. Rowling",
+          "status": false
+        },
+        {
+          "id": "22",
+          "index": "B",
+          "text": " George R. R. Martin",
+          "status": true
+        },
+        {
+          "id": "23",
+          "index": "C",
+          "text": "Stephen King",
+          "status": false
+        },
+        {
+          "id": "24",
+          "index": "D",
+          "text": "Suzanne Collins",
+          "status": false
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "title": "What is the square root of 144?",
+      "indexStatus": "8",
+      "variants": [
+        {
+          "id": "25",
+          "index": "A",
+          "text": "12",
+          "status": true
+        },
+        {
+          "id": "26",
+          "index": "B",
+          "text": "14",
+          "status": true
+        },
+        {
+          "id": "27",
+          "index": "C",
+          "text": "16",
+          "status": false
+        },
+        {
+          "id": "28",
+          "index": "D",
+          "text": "18",
+          "status": false
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "title": "Which planet is known as the \"Red Planet\"?",
+      "indexStatus": "9",
+      "variants": [
+        {
+          "id": "29",
+          "index": "A",
+          "text": "Venus",
+          "status": false
+        },
+        {
+          "id": "30",
+          "index": "B",
+          "text": "Mars",
+          "status": true
+        },
+        {
+          "id": "31",
+          "index": "C",
+          "text": "Jupiter",
+          "status": false
+        },
+        {
+          "id": "32",
+          "index": "D",
+          "text": "Saturn",
+          "status": false
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "title": "What is the chemical symbol for gold?",
+      "indexStatus": "10",
+      "variants": [
+        {
+          "id": "33",
+          "index": "A",
+          "text": "Gd",
+          "status": false
+        },
+        {
+          "id": "34",
+          "index": "B",
+          "text": "Go",
+          "status": false
+        },
+        {
+          "id": "35",
+          "index": "C",
+          "text": "Au",
+          "status": true
+        },
+        {
+          "id": "36",
+          "index": "D",
+          "text": "Ag",
+          "status": false
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "title": "Who painted the Mona Lisa?",
+      "indexStatus": "11",
+      "variants": [
+        {
+          "id": "37",
+          "index": "A",
+          "text": "Vincent Van Gogh",
+          "status": false
+        },
+        {
+          "id": "38",
+          "index": "B",
+          "text": "Pablo Picasso",
+          "status": false
+        },
+        {
+          "id": "39",
+          "index": "C",
+          "text": "Leonardo da Vinci",
+          "status": true
+        },
+        {
+          "id": "40",
+          "index": "D",
+          "text": "Michelangelo",
+          "status": false
+        }
+      ]
+    },
+    {
+      "id": "11",
+      "title": "What is the name of the longest river in the world?",
+      "indexStatus": "12",
+      "variants": [
+        {
+          "id": "41",
+          "index": "A",
+          "text": "Amazon",
+          "status": false
+        },
+        {
+          "id": "42",
+          "index": "B",
+          "text": "Nile",
+          "status": true
+        },
+        {
+          "id": "43",
+          "index": "C",
+          "text": "Yangtze",
+          "status": false
+        },
+        {
+          "id": "44",
+          "index": "D",
+          "text": "Mississippi",
+          "status": false
+        }
+      ]
+    },
+    {
+      "id": "12",
+      "title": "Who was the first person to walk on the moon?",
+      "indexStatus": "13",
+      "variants": [
+        {
+          "id": "45",
+          "index": "A",
+          "text": "Buzz Aldrin",
+          "status": false
+        },
+        {
+          "id": "46",
+          "index": "B",
+          "text": "Neil Armstrong",
+          "status": true
+        },
+        {
+          "id": "47",
+          "index": "C",
+          "text": "Yuri Gagarin",
+          "status": false
+        },
+        {
+          "id": "48",
+          "index": "D",
+          "text": "Michael Collins",
+          "status": false
+        }
+      ]
+    }
+  ]
+}

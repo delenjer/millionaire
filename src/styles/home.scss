@@ -1,0 +1,51 @@
+.home {
+  display: flex;
+  position: relative;
+  width: 100vw;
+  height: 100%;
+  background-color: #fff;
+}
+
+.home-bg-wrap {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--bg-color);
+  z-index: 1;
+
+  &:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    border-top: 100vh solid #fff;
+    border-right: 100vw solid transparent;
+    z-index: 1;
+  }
+}
+
+.end-game.home-bg-wrap {
+  background-color: #fff;
+}
+
+.start-game-title {
+  width: 100%;
+  max-width: 49.7rem;
+  font-size: 5.6rem;
+  font-weight: 600;
+  line-height: 116%;
+}
+
+@media (max-width: 1024px) {
+  .start-game-title {
+    font-size: 4rem;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .start-game-title {
+    max-width: initial;
+    font-size: 3.2rem;
+    text-align: center;
+  }
+}

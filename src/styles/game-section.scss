@@ -1,0 +1,161 @@
+.game-section {
+  position: relative;
+  height: 100%;
+  background-color: var(--game-section-bg);
+}
+
+.questions-section,
+.result-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  height: 100%;
+}
+
+.result-section {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 100%;
+  background-color: var(--game-section-bg);
+  opacity: 0;
+  z-index: -1;
+  transition: width 0.2s, opacity 0.2s, z-index 0.2s;
+}
+
+.show-section {
+  width: 100%;
+  z-index: 3;
+  opacity: 1;
+}
+
+.questions-section {
+  justify-content: flex-end;
+  position: relative;
+  height: 100%;
+}
+
+.result-section {
+  justify-content: center;
+  height: 100%;
+}
+
+.variants {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 0.8rem 0;
+  margin: 9.7rem 0 2.4rem 0;
+}
+
+.question-text {
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 116%;
+  text-align: center;
+  color: var(--text-color);
+}
+
+.winning-list {
+  width: 100%;
+  padding: 0;
+  margin-top: 4rem;
+}
+
+.curr-total .button-container {
+  background-color: var(--orange-100);
+}
+
+.score,
+.info-text {
+  font-weight: 600;
+  line-height: 116%;
+  text-align: center;
+  color: var(--text-color);
+}
+
+
+.score {
+  font-size: 1.8rem;
+  opacity: 0.5;
+}
+
+.info-text {
+  font-size: 3.2rem;
+  margin-top: 0.8rem;
+}
+
+@media (min-width: 769px) {
+  .game-section {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .questions-section {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .score,
+  .info-text {
+    text-align: left;
+  }
+
+  .result-section {
+    position: relative;
+    min-width: 37.6rem;
+    z-index: initial;
+    opacity: 1;
+    background-color: #fff;
+  }
+
+  .questions-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem 0;
+    height: 100%;
+    padding: 10rem 0 5rem;
+  }
+
+  .variants {
+    margin: 0;
+  }
+}
+
+@media (min-width: 1025px) {
+  .questions-item {
+    padding: 10rem 5rem 5rem 4rem;
+  }
+
+  .score {
+    font-size: 3.2rem;
+  }
+
+  .info-text {
+    font-size: 5.6rem;
+  }
+
+  .question-text {
+    font-size: 3.2rem;
+    text-align: left;
+  }
+
+  .variants {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0.8rem 0;
+  }
+}
+
+@media (min-width: 1400px) {
+  .questions-item {
+    padding: 13.3rem 8rem 12.2rem 14.1rem;
+  }
+}
+
+@media (min-width: 1600px) {
+  .questions-item {
+    width: 123rem;
+  }
+}
