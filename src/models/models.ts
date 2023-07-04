@@ -24,7 +24,7 @@ export interface ResultDto {
   total: string,
 }
 
-export interface statusAnswerDto {
+export interface StatusAnswerDto {
   id: string,
   statusClass: string,
 }

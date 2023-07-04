@@ -20,7 +20,7 @@ export const GameSpace = () => {
       dispatch(getStatusGame(true));
       navigate('/');
     }
-  }, [navigate, questions, itemVisible]);
+  }, [navigate, questions, itemVisible, dispatch]);
 
   const handleClick = (id:string, status:boolean) => {
     if (status) {

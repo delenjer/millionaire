@@ -5,8 +5,6 @@ import { RootState } from '../../store/store';
 export const SummaryContent = () => {
   const summary = useSelector((state:RootState) => state.winResult.summaryScore);
 
-  console.log(summary);
-
   return (
     <>
       <p className="score">

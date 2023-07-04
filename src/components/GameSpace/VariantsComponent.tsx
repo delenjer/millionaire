@@ -1,5 +1,5 @@
 import React, { FC, useState } from 'react';
-import { statusAnswerDto, Variants } from '../../models/models';
+import { StatusAnswerDto, Variants } from '../../models/models';
 
 type VariantsComponentProps = {
   variants: Variants[],
@@ -14,7 +14,7 @@ export const VariantsComponent:FC<VariantsComponentProps> = (
     indexStatus,
   },
 ) => {
-  const [statusAnswer, setStatusAnswer] = useState<statusAnswerDto>({
+  const [statusAnswer, setStatusAnswer] = useState<StatusAnswerDto>({
     id: '',
     statusClass: '',
   });
