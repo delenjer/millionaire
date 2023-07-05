@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useCallback } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { RootState } from '../../store/store';
@@ -22,7 +22,7 @@ export const GameSpace = () => {
     }
   }, [navigate, questions, itemVisible, dispatch]);
 
-  const handleClick = (id:string, status:boolean) => {
+  const handleClick = useCallback((id:string, status:boolean) => {
     if (status) {
       setTimeout(() => setItemVisibleVisible(id), 1000);
       dispatch(getWinResult(itemVisible));
@@ -33,7 +33,7 @@ export const GameSpace = () => {
 
       setTimeout(() => navigate('/'), 1000);
     }
-  };
+  }, [dispatch, itemVisible, navigate]);
 
   return (
     <div className="game-section">

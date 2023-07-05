@@ -1,4 +1,4 @@
-import React, { FC, useState } from 'react';
+import React, { FC, useState, useCallback } from 'react';
 import { StatusAnswerDto, Variants } from '../../models/models';
 
 type VariantsComponentProps = {
@@ -19,7 +19,7 @@ export const VariantsComponent:FC<VariantsComponentProps> = (
     statusClass: '',
   });
 
-  const handleStatus = (status:boolean, id:string) => {
+  const handleStatus = useCallback((status:boolean, id:string) => {
     if (status) {
       setStatusAnswer({
         id,
@@ -31,7 +31,7 @@ export const VariantsComponent:FC<VariantsComponentProps> = (
         statusClass: 'action-wrong',
       });
     }
-  };
+  }, []);
 
   return (
     <div className="variants">

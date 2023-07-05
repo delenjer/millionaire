@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useCallback } from 'react';
 import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { PagesRoutes } from '../../routers';
@@ -15,14 +15,14 @@ export const StartGame = () => {
   const statusGame = useSelector((state:RootState) => state.statusGame.statusGame);
   const dispatch = useDispatch();
 
-  const handleClick = () => {
+  const handleClick = useCallback(() => {
     if (!questions.length) {
       dispatch(addQuestions(data.questionsList));
       dispatch(addResultList(dataWinning.winning));
     }
 
     dispatch(resetSummary('0'));
-  };
+  }, [questions.length, dispatch]);
 
   return (
     <div className="container">
