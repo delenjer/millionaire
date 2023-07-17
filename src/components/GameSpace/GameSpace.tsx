@@ -7,6 +7,7 @@ import { VariantsComponent } from './VariantsComponent';
 import { WinResult } from './WinResult';
 import { getCurrWinId, getWinResult } from '../../store/features/winResultSlice';
 import { getStatusGame } from '../../store/features/statusGameSlice';
+import { MenuButton } from '../MenuButton';
 
 export const GameSpace = () => {
   const [isShow, setShow] = useState(false);
@@ -35,21 +36,26 @@ export const GameSpace = () => {
     }
   }, [dispatch, itemVisible, navigate]);
 
+  const handleMenuClick = () => {
+    setShow(true);
+  };
+
   return (
     <div className="game-section">
       <div className="questions-section">
-        <button
-          type="button"
-          className="menu-button"
-          onClick={() => setShow(true)}
+        <MenuButton
+          classNameProps="menu-button"
+          handleClick={handleMenuClick}
         >
           <img src="./images/menu.svg" alt="Menu" />
-        </button>
+        </MenuButton>
 
         {
           questions && questions.map((question:Question) => (
             <div
-              className={itemVisible === question.id ? 'show questions-item' : 'hide'}
+              className={
+              itemVisible === question.id ? 'show questions-item' : 'hide'
+            }
               key={question.id}
             >
               <p className="question-text">{ question.title }</p>

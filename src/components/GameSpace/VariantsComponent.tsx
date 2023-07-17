@@ -1,5 +1,6 @@
 import React, { FC, useState, useCallback } from 'react';
 import { StatusAnswerDto, Variants } from '../../models/models';
+import { VariantButton } from '../VariantButton/VariantButton';
 
 type VariantsComponentProps = {
   variants: Variants[],
@@ -44,20 +45,20 @@ export const VariantsComponent:FC<VariantsComponentProps> = (
               : 'action-variants-container'}
           >
             <div className="button-container button-variants-container">
-              <button
-                type="button"
-                onClick={() => {
-                  handleClick(indexStatus, variant.status);
-                  handleStatus(variant.status, variant.id);
-                }}
-                className="action action-variants"
+              <VariantButton
+                indexStatus={indexStatus}
+                variantStatus={variant.status}
+                variantId={variant.id}
+                statusAnswerId={statusAnswer.id}
+                handleClick={handleClick}
+                handleStatus={handleStatus}
               >
                 <span className="action-variants-text">
                   { variant.index }
                 </span>
 
                 { variant.text }
-              </button>
+              </VariantButton>
             </div>
           </div>
         ))

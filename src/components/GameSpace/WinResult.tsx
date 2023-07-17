@@ -1,6 +1,7 @@
 import React, { FC } from 'react';
 import { useSelector } from 'react-redux';
 import { RootState } from '../../store/store';
+import { MenuButton } from '../MenuButton';
 
 type WinResultProps = {
   setShow: (arg0:boolean) => void,
@@ -11,15 +12,18 @@ type WinResultProps = {
 export const WinResult:FC<WinResultProps> = ({ setShow, itemVisible, isShow }) => {
   const winningList = useSelector((state:RootState) => state.winResult.winningList);
 
+  const handleMenuClick = () => {
+    setShow(false);
+  };
+
   return (
     <div className={isShow ? 'result-section show-section' : 'result-section'}>
-      <button
-        type="button"
-        className="menu-button"
-        onClick={() => setShow(false)}
+      <MenuButton
+        classNameProps="menu-button"
+        handleClick={handleMenuClick}
       >
         <img src="./images/close.svg" alt="Menu Close" />
-      </button>
+      </MenuButton>
 
       <ul className="winning-list">
         {

@@ -27,7 +27,7 @@ export const StartGame = () => {
   return (
     <div className="container">
       <div className="container-image">
-        <img className="img" src="./images/great.svg" alt="Icon" />
+        <img className="img" src={`${process.env.PUBLIC_URL}/great.svg`} alt="Icon" />
       </div>
 
       <section className="container-content">
